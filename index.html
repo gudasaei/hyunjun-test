@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실버세대 퀴즈 이벤트</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>건강 점수 체크하고 안마의자 받자!</h1>
+    </header>
+
+    <form id="quizForm">
+      <div class="question">
+        <h2>1. 피로 회복에 좋은 습관은 무엇일까요?</h2>
+        <label><input type="radio" name="q1" value="0"/> 야식 먹기</label>
+        <label><input type="radio" name="q1" value="20" /> 규칙적인 수면과 스트레칭</label>
+        <label><input type="radio" name="q1" value="0"/> 하루 종일 누워있기</label>
+        <label><input type="radio" name="q1" value="0"/> 스마트폰 오래보기</label>
+      </div>
+      <hr />
+      <div class="question">
+        <h2>2. 안마의자 사용이 도움 되는 신체 부위는 어디일까요?</h2>
+        <label><input type="radio" name="q2" value="0"/> 눈</label>
+        <label><input type="radio" name="q2" value="0" /> 심장</label>
+        <label><input type="radio" name="q2" value="20"/> 근육과 관절</label>
+        <label><input type="radio" name="q2" value="0"/> 폐</label>
+      </div>
+      <hr />
+      <div class="question">
+        <h2>3. ‘안마’라는 단어는 어떤 효과를 기대할 수 있을까요?</h2>
+        <label><input type="radio" name="q3" value="0"/> 소화불량</label>
+        <label><input type="radio" name="q3" value="20"/> 긴장 안화 및 피로 회복</label>
+        <label><input type="radio" name="q3" value="0"/> 청력 향상</label>
+        <label><input type="radio" name="q3" value="0"/> 시력 개선</label>
+      </div>
+      <hr />
+      <div class="question">
+        <h2>4. 나이가 들수록 안마가 도움이 되는 이유는?</h2>
+        <label><input type="radio" name="q4" value="0"/> 재미있어서</label>
+        <label><input type="radio" name="q4" value="0"/> 피부 미용에 좋아서</label>
+        <label><input type="radio" name="q4" value="20"/> 혈액순환에 좋아서</label>
+        <label><input type="radio" name="q4" value="0"/> 소리를 줄여줘서</label>
+      </div>
+      <hr />
+      <div class="question">
+        <h2>5. 다음 중 혈액순환을 돕는 생활 습관은?</h2>
+        <label><input type="radio" name="q5" value="0"/> 오래 앉아 있기</label>
+        <label><input type="radio" name="q5" value="20"/> 따듯한 물 자주 마시기</label>
+        <label><input type="radio" name="q5" value="0"/> 과도한 카페인 섭취</label>
+        <label><input type="radio" name="q5" value="0"/> 무리한 운동</label>
+      </div>
+    </form>
+    <form id="submitQuiz">
+      <button type="button" class="btn">결과 보기</button>
+    </form>
+
+    <div class="modal" id="modal">
+        <div class="close-modal-btn-container">
+            <button class="modal-close-btn" id="modal-close-btn">X</button>
+          </div>
+       <form id="modal-form">
+          <div class="modal-inner" id="modal-inner">
+          <h2> 당신의 건강 점수는?</h2>
+          <p class="modal-text" id="modal-text"></p>
+          <p>응모 참가하고 안마의자 받기</p>
+          <input
+            type="text"
+            aria-label="dlfma"
+            name="fullName"
+            placeholder="이름"
+            required
+          />
+          <input
+            type="email"
+            aria-label="Email address"
+            name="email"
+            placeholder="이메일"
+            required
+          />
+          <input
+          type="tel"
+            aria-label="tel"
+            name="tel"
+            placeholder="전화번호"
+             minlength="11" maxlength="11"
+            required
+          />
+          <div class="modal-choice-btns" id="modal-choice-btns">
+            <button class="modal-btn" >응모하기</button>
+
+          </div>
+
+        </form>  
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
